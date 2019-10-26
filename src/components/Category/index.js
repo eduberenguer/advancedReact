@@ -4,10 +4,11 @@ import { Anchor, Image } from './styles'
 //const DEFAULT_IMAGE = 'http://i.imgur.com/dJa0Hpl.jpg'
 
 export const Category = (props) => (
-  <Anchor href={props.path}>
+  <Anchor>
     <Image src={props.cover} />
-    {props.name}
+    {props.emoji}
   </Anchor>
+
 )
 
 
