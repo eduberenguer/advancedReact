@@ -39,13 +39,14 @@ export const ListOfCategories = () => {
       {
         loading
           ? <Loader key={loading}>
-              <ClipLoader
-                css={override}
-                sizeUnit={'px'}
-                size={150}
-                color={'#123abc'}
-                loading={loading}/>
-            </Loader>
+            <ClipLoader
+              css={override}
+              sizeUnit='px'
+              size={150}
+              color='#123abc'
+              loading={loading}
+            />
+          </Loader>
           : categories.map((category) => (
             <Item key={category.id}><Category {...category} /></Item>
           ))
