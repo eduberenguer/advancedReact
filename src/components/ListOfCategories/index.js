@@ -1,28 +1,14 @@
 import React, {Fragment, useEffect, useState} from 'react'
 import { Category } from '../Category'
+import { useCategoriesData } from '../../hooks/useCategoriesData'
 
 import { List, Item, Loader, override } from './styles'
 import { ClipLoader } from 'react-spinners'
 
-const useCategoriesData = () => {
-  const [categories, setCategories] = useState([])
-  const [loading, setLoading] = useState(false)
-
-  useEffect(() => {
-    setLoading(true)
-    window.fetch('https://petgram-server.eddiberenguer.now.sh/categories')
-      .then(res => res.json())
-      .then(response => {
-        setCategories(response)
-        setLoading(false)
-      })
-  }, [])
-
-  return { categories, loading }
-}
+const URL_REQUEST = 'https://petgram-server.eddiberenguer.now.sh/categories'
 
 export const ListOfCategories = () => {
-  const { categories, loading } = useCategoriesData()
+  const [ categories, loading ] = useCategoriesData(URL_REQUEST)
   const [showFixed, setShowFixed] = useState(false)
 
   useEffect(() => {
