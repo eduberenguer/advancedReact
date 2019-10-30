@@ -3,7 +3,7 @@
 -- Inprogress --
 
 Aplication with:  
-React   
+ReactJS
 ReachRouter  
 Css in JS(Styled-components)  
 GraphQL  
