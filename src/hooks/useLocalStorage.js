@@ -9,10 +9,10 @@ export const useLocalStorage = (key, initialValue) => {
       return initialValue
     }
   })
-  const setLocalStorage = item => {
+  const setLocalStorage = newItem => {
     try{
-      window.localStorage.setItem(key, JSON.stringify(item))
-      setValue(item)
+      window.localStorage.setItem(key, JSON.stringify(newItem))
+      setValue(newItem)
     }catch (e) {
       console.error(e)
     }
