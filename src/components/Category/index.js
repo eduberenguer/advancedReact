@@ -1,13 +1,13 @@
 import React from 'react'
-import { Anchor, Image } from './styles'
+import { Link, Image } from './styles'
 
 //const DEFAULT_IMAGE = 'http://i.imgur.com/dJa0Hpl.jpg'
 
 export const Category = (props) => (
-  <Anchor>
+  <Link to={props.path}>
     <Image src={props.cover} />
     {props.emoji}
-  </Anchor>
+  </Link>
 
 )
 
