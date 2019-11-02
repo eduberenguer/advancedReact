@@ -3,7 +3,6 @@ import { ListOfCategories } from '../components/ListOfCategories'
 import { ListOfPhotoCards } from '../container/listOfPhotoCard'
 
 export const Home = (props) => {
-  console.log(props)
   return (
     <Fragment>
       <ListOfCategories />
