@@ -13,12 +13,14 @@ export const List = styled.ul`
           border-radius: 60px;
           /*left: 0;*/
           /*margin: 0 auto;*/
-          padding: 5px;
+          padding: 15px;
           position: fixed;
           right: 0;
           top: -20px;
-          transform: scale(.5);
+          transform: scale(.4);
           z-index: 1;
+          display: flex;
+          justify-content: space-around;
         `}
     `
 
