@@ -11,4 +11,3 @@ React Apollo
 LightHouse and Cypress   
 Now  
 
-https://petgram.eddiberenguer.now.sh/
